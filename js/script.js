@@ -10,9 +10,9 @@ const toDoData = localStorage.getItem('toDo') ? JSON.parse(localStorage.getItem(
 const render = function () {
     todoList.innerHTML = '';
     todoCompleted.innerHTML = '';
+    localStorage.setItem('toDo', JSON.stringify(toDoData));
 
     toDoData.forEach(function (item, index) {
-        localStorage.setItem('toDo', JSON.stringify(toDoData));
         const li = document.createElement('li');
 
         li.classList.add('todo-item');
