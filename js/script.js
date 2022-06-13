@@ -39,8 +39,6 @@ const render = function () {
             render();
         });
     });
-    console.log(toDoData);
-
 };
 
 render();
