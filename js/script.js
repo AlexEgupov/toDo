@@ -47,7 +47,7 @@ todoControl.addEventListener('submit', function (event) {
     event.preventDefault();
 
     if (headerInput.value.trim() == '') {
-        alert('Нельзя долбавить пустоту');
+        alert('Нельзя добавить пустоту');
         headerInput.value = '';
     } else {
         const newToDo = {
